@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Perfect Pantry</h1>
+          <img src={ require('./img/pp_logo.png') } className="App-logo" alt="logo"/>
         </header>
         <Form getRecipe={this.getRecipe} />
         <Recipes recipes={this.state.recipes} />
