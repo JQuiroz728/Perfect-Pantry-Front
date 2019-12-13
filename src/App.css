@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+
 body {
   background:#f3f3f3;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 img {
@@ -19,6 +21,9 @@ a {
 button:focus {
   outline: none;
 }
+p {
+  text-align: left;
+}
 
 .App {
   text-align: center;
@@ -35,9 +40,8 @@ button:focus {
 .App-logo {
   border-radius: 8px;
   background-color: blue;
-  max-width: 20%;
+  max-width: 150px;
   height: auto;
-  margin-top: 1px;
 }
 
 .App-title {
@@ -98,6 +102,9 @@ button:focus {
   letter-spacing: 2px;
   width: 10%;
   padding: 0.4rem;
+}
+::-webkit-input-placeholder {
+  text-align: center;
 }
 
 .form__button {

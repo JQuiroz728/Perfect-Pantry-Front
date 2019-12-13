@@ -3,6 +3,8 @@ import './App.css';
 
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
+import Navbar from './components/Navbar';
+
 
 const API_KEY = "00d0cd3d6af26d7e2647971839f1d9bd";
 const API_ID = "d3e031d2";
@@ -32,9 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={ require('./img/pp_logo.png') } className="App-logo" alt="logo"/>
-        </header>
+        <Navbar />
         <Form getRecipe={this.getRecipe} />
         <Recipes recipes={this.state.recipes} />
       </div>
